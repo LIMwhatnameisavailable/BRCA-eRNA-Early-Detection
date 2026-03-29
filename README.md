@@ -7,7 +7,7 @@ As a parallel extension to our Prognostic Signature Project, this module rigorou
 
 ## 📂 Repository Structure
 The repository is designed as a standalone project, organized chronologically from raw data quantification to model bootstrap evaluation.
-*Note: The `Data_Source` folder is excluded from the repository due to size limitations.*
+*Note: Lightweight annotation and reference files are included in `Data_Source/`, but raw sequencing data and large clinical matrices must be downloaded separately due to GitHub size limitations.*
 
 ```text
 Early_Discrimination_Python/
