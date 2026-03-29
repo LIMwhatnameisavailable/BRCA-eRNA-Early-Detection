@@ -28,8 +28,8 @@ except ImportError:
 
 # ==================== 路径配置 ====================
 
-DATA_DIR = "./clean_data_early_stage"
-OUTPUT_DIR = "./results_step3_optimized"
+DATA_DIR = "../results/clean_data_early_stage"
+OUTPUT_DIR = "../results/step3_optimized"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 N_BOOTSTRAPS = 5000
 
