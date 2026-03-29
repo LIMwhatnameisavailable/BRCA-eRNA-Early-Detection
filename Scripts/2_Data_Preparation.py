@@ -6,8 +6,8 @@ import random
 
 # ==================== 路径配置 ====================
 
-BASE_DIR = "/mnt/disk4/srtp2024"
-OUTPUT_DIR = "./clean_data_early_stage"
+BASE_DIR = "../Data_Source"
+OUTPUT_DIR = "../results/clean_data_early_stage"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 CLINICAL_FILE = "/mnt/disk2/srtp2024/TJW/TCGA-BRCA.clinical.xlsx"
