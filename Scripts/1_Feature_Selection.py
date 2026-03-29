@@ -14,12 +14,12 @@ warnings.filterwarnings('ignore')
 
 # ==================== 路径配置 ====================
 
-BASE_DIR = "/mnt/disk4/srtp2024"
-OUTPUT_DIR = "./clean_data_early_stage"
+BASE_DIR = "../Data_Source"
+OUTPUT_DIR = "../results/clean_data_early_stage"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # 临床数据路径
-CLINICAL_PATH = "/mnt/disk2/srtp2024/TJW/TCGA-BRCA.clinical.xlsx"
+CLINICAL_PATH = f"{BASE_DIR}/TCGA-BRCA.clinical.xlsx"
 
 FILES = {
     "TCGA_Expr": os.path.join(BASE_DIR, "TCGA/TCGA_RPKM_eRNA_300k_peaks_in_Super_enhancer_BRCA.txt"),
