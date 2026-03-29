@@ -6,14 +6,14 @@ MAX_JOBS=6
 # 每个任务分配的线程数
 THREADS_PER_JOB=15
 
-# HISAT2 索引路径
-INDEX_PATH="/mnt/disk2/srtp2024/TJW/External_Validation/refs/grch38/genome"
+# HISAT2 索引路径 
+INDEX_PATH="../Data_Source/refs/grch38/genome"
 
 # SAF 注释文件路径
-SAF_FILE="/mnt/disk4/srtp2024/TCGA/eRNA_standard_500bp.saf"
+SAF_FILE="../Data_Source/eRNA_standard_500bp.saf"
 
-# 全局日志路径
-GLOBAL_LOG="/mnt/disk4/srtp2024/run_new_saf.log"
+# 全局日志路径 
+GLOBAL_LOG="../results/run_new_saf.log"
 
 # 初始化命名管道，用于并发令牌控制
 tmp_fifo="/tmp/$$.fifo"
