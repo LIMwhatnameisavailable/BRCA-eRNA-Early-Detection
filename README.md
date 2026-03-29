@@ -3,7 +3,7 @@
 ## 📌 Project Overview
 This repository contains the complete Python-based machine learning and deep learning pipeline for the early-stage discrimination of Breast Cancer (BRCA) using enhancer RNA (eRNA) profiles. 
 
-As a parallel extension to our Prognostic Signature Project, this module rigorously defines a "normal-like" reference to mitigate field cancerization, quantifies eRNA expression from raw RNA-seq data of independent cohorts (GSE225846, GSE229571), and evaluates 10 distinct classification algorithms. The pipeline features a high-performance 96-core parallel quantification script, strict data leakage prevention during preprocessing, and an advanced Attention-1D-CNN model.
+As a parallel extension to our Prognostic Signature Project, this module rigorously defines a "normal-like" reference to mitigate field cancerization, quantifies eRNA expression from raw RNA-seq data of independent cohorts (GSE225846, GSE229571), and evaluates 10 distinct classification algorithms. The pipeline features a quantification script, data leakage prevention during preprocessing, and an advanced Attention-1D-CNN model.
 
 ## 📂 Repository Structure
 The repository is designed as a standalone project, organized chronologically from raw data quantification to model bootstrap evaluation.
@@ -26,12 +26,12 @@ Early_Discrimination_Python/
 
 | File Category | Required Filename / Path | Description |
 | :--- | :--- | :--- |
-| **TCGA eRNA Expr** | `TCGA/TCGA_RPKM_eRNA_300k_peaks_in_Super_enhancer_BRCA.txt` | Processed from TCeA |
-| **TCGA Normal Ref** | `TCGA/Normal_like_samples.csv` | *Generated via Prognosis R Script 8* |
+| **TCGA eRNA Expr** | `TCGA_RPKM_eRNA_300k_peaks_in_Super_enhancer_BRCA.txt` | Processed from TCeA |
+| **TCGA Normal Ref** | `Normal_like_samples.csv` | *Generated via Prognosis R Script 8* |
 | **TCGA Clinical** | `TCGA-BRCA.clinical.xlsx` | Phenotype data for stage filtering |
 | **GEO Metadata** | `GSE225846/SraRunTable_GSE225846.csv` | Clinical metadata for external cohort 1 |
 | **GEO Metadata** | `GSE229571/SraRunTable_GSE229571.csv` | Clinical metadata for external cohort 2 |
-| **SAF Annotation** | `TCGA/eRNA_standard_500bp.saf` | Custom SAF file for eRNA quantification |
+| **SAF Annotation** | `eRNA_standard_500bp.saf` | Custom SAF file for eRNA quantification |
 
 > 🔗 **Important Link to Prognosis Module:** 
 > The `Normal_like_samples.csv` used here excludes field cancerization artifacts. The R code to generate this reference is located in the companion Prognosis repository: 
@@ -55,7 +55,7 @@ Early_Discrimination_Python/
 **Script 3: `3_Model_Comparison_Bootstrap.py`**
 *   **Function:** The core evaluation engine. 
     *   **Preprocessing:** Implements strict anti-leakage `Log1p + Global Robust Scaling` (fit on train, transform on test).
-    *   **Modeling:** Trains 8 traditional ML models and 2 DL models (including a custom `Attention-1D-CNN` with GroupNorm and SE-Blocks). Handles class imbalance via `BalancedBaggingClassifier`.
+    *   **Modeling:** Trains 8 traditional ML models and 2 DL models. Handles class imbalance via `BalancedBaggingClassifier`.
     *   **Validation:** Evaluates generalization on GSE225846 and GSE229571 using 5,000 bootstrap iterations. 
     *   **Output:** Generates smoothed ROC curves, exports trained models as `.pkl` files (ready for the Shiny Web App), and compiles a publication-ready metrics table (AUC, Sensitivity, Specificity, F1) with 95% CIs.
 
