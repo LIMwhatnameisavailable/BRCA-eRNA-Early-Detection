@@ -157,9 +157,9 @@ def load_external_data(config):
             print(f"   Matrix Col 示例: {df.columns[:3].tolist()}")
             return None
 
-        # 将 counts 转换为 CPM（窗口长度 500bp，除以 0.5kb）
+        # 将 counts 转换为 CPM
         df_counts = df[common_ids]
-        df_cpm = df_counts.div(df_counts.sum(axis=0), axis=1) * 1e6 / 0.5
+        df_cpm = df_counts.div(df_counts.sum(axis=0), axis=1) * 1e6 / 1.0
         return df_cpm.T
 
     except Exception as e:
