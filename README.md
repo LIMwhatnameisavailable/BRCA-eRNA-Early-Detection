@@ -101,3 +101,14 @@ and set the --index path accordingly in the script.
 ## 🛠 Dependencies
 *   **Python Environment:** Python 3.9+, `scikit-learn` (1.6.1), `PyTorch` (2.3.1), `joblib`, `numpy`, `pandas`, `matplotlib`.
 *   **Bioinformatics Tools:** `HISAT2`, `samtools`, `featureCounts` (Subread package).
+
+  ## 📜 License
+
+This project is for research and educational purposes. The TCGA and GEO data are subject to their respective original license terms.
+
+---
+
+State Key Laboratory of Digital Medical Engineering, School of Biological Science and Medical Engineering, Southeast University
+
+Contact: 213230182@seu.removethis.edu.cn
+
