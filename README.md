@@ -32,7 +32,7 @@ BRCA-eRNA-Early-Detection/
 │   └── GSE229571/counts_matrix_500bp_clean.txt.gz
 ├── Results/                           <-- All results, figures, tables, and trained models
 │   ├── Analysis_Results/              <-- Nested CV results, signature lists, metrics
-│   ├── Supplementary_Figures/         <-- ROC curves, PCA batch effect plots (Fig S11)
+│   ├── Figures/         <-- ROC curves, PCA batch effect plots (Fig S11)
 │   ├── Supplementary_Tables/          <-- Supplementary Tables S13-S26
 │   └── Trained_Models/                <-- 11 trained ML/DL models (.pkl)
 └── environment/                       <-- Conda environment configuration
@@ -92,7 +92,7 @@ and set the --index path accordingly in the script.
 | Directory | Description |
 | :--- | :--- |
 | `Results/Analysis_Results/` | Nested CV summary CSVs, final signature lists, and external validation SCI metrics |
-| `Results/Supplementary_Figures/` | ROC curves (GSE225846, GSE229571, KNN51), nested CV AUC distribution, and batch effect PCA plots (Fig S11) |
+| `Results/Figures/` | ROC curves (GSE225846, GSE229571, KNN51), nested CV AUC distribution, and batch effect PCA plots (Fig S11) |
 | `Results/Supplementary_Tables/` | Supplementary Tables S13–S26 (early detection signature, top300 features, nested CV summary, PAM50/subtype AUC) |
 | `Results/Trained_Models/` | 11 trained ML/DL model `.pkl` files (ready for deployment) |
 
