@@ -28,13 +28,13 @@ BRCA-eRNA-Early-Detection/
 │       └── run_subtype_analysis.py            <-- PAM50 and clinical subtype AUC analysis
 ├── ExternalValidationData/            <-- Processed counts matrices for external validation
 │   ├── eRNA_standard_500bp_hg38.saf
-│   ├── GSE225846/counts_matrix_500bp_clean.txt
-│   └── GSE229571/counts_matrix_500bp_clean.txt
-├── results/                           <-- Nested CV results, signature lists, metrics
-├── figures/                           <-- ROC curves, PCA batch effect plots (Fig S11)
-├── tables/                            <-- Supplementary Tables S13-S26
-├── trained_models/                    <-- 11 trained ML/DL models (.pkl)
-├── subtype_analysis/                  <-- PAM50 & clinical subtype AUC results
+│   ├── GSE225846/counts_matrix_500bp_clean.txt.gz
+│   └── GSE229571/counts_matrix_500bp_clean.txt.gz
+├── Results/                           <-- All results, figures, tables, and trained models
+│   ├── Analysis_Results/              <-- Nested CV results, signature lists, metrics
+│   ├── Supplementary_Figures/         <-- ROC curves, PCA batch effect plots (Fig S11)
+│   ├── Supplementary_Tables/          <-- Supplementary Tables S13-S26
+│   └── Trained_Models/                <-- 11 trained ML/DL models (.pkl)
 └── environment/                       <-- Conda environment configuration
 ```
 
@@ -87,17 +87,14 @@ Pre-computed expression matrices for GSE225846 and GSE229571 are available in `E
 Download from the HISAT2 index page
 and set the --index path accordingly in the script.
 
-### 📁 Additional Directories
+### 📁 Result Directories
 
 | Directory | Description |
 | :--- | :--- |
-| `ExternalValidationData/` | Processed counts matrices for GSE225846 and GSE229571, plus hg38 SAF annotation file |
-| `figures/` | ROC curves, nested CV AUC distributions, and batch effect PCA plots (Fig S11) |
-| `tables/` | Supplementary Tables S13–S26 (early detection signature, top300 features, nested CV summary, PAM50/subtype AUC) |
-| `trained_models/` | 11 trained ML/DL model `.pkl` files (ready for deployment) |
-| `results/` | Nested CV summary CSVs, final signature lists, and external validation SCI metrics |
-| `subtype_analysis/` | PAM50 prediction scores and clinical subtype AUC results (Tables A1, A2, B1) |
-| `environment/` | Conda environment YAML and software version list |
+| `Results/Analysis_Results/` | Nested CV summary CSVs, final signature lists, and external validation SCI metrics |
+| `Results/Supplementary_Figures/` | ROC curves (GSE225846, GSE229571, KNN51), nested CV AUC distribution, and batch effect PCA plots (Fig S11) |
+| `Results/Supplementary_Tables/` | Supplementary Tables S13–S26 (early detection signature, top300 features, nested CV summary, PAM50/subtype AUC) |
+| `Results/Trained_Models/` | 11 trained ML/DL model `.pkl` files (ready for deployment) |
 
 ## 🚀 How to Run the Pipeline
 
