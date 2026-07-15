@@ -3,7 +3,7 @@
 ## 📌 Project Overview
 This repository contains the complete Python-based machine learning and deep learning pipeline for the early-stage discrimination of Breast Cancer (BRCA) using enhancer RNA (eRNA) profiles. 
 
-As a parallel extension to our Prognostic Signature Project (BRCA-eRNA-Prognosis), this module rigorously defines a "normal-like" reference to mitigate field cancerization, quantifies eRNA expression from raw RNA-seq data of independent cohorts (GSE225846, GSE229571), and evaluates 10 distinct classification algorithms. The pipeline features a quantification script, data leakage prevention during preprocessing, and an advanced Attention-1D-CNN model.
+As a parallel extension to our Prognostic Signature Project ([BRCA-eRNA-Prognosis](https://github.com/LIMwhatnameisavailable/BRCA-eRNA-Prognosis)), this module rigorously defines a "normal-like" reference to mitigate field cancerization, quantifies eRNA expression from raw RNA-seq data of independent cohorts (GSE225846, GSE229571), and evaluates 10 distinct classification algorithms. The pipeline features a quantification script, data leakage prevention during preprocessing, and an advanced Attention-1D-CNN model.
 
 ## 🌐 Interactive Web Application 
 To make our models accessible to clinicians and researchers without programming expertise, we have deployed a user-friendly online tool: eRNACare. You can upload your own eRNA expression profiles to get real-time diagnostic predictions without running any code.
