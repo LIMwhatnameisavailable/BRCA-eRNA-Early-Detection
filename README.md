@@ -91,10 +91,10 @@ and set the --index path accordingly in the script.
 
 ### 🌐 External Validation Datasets
 
-| Cohort | GEO Accession | Link |
-| :--- | :--- | :--- |
-| Breast cancer early-stage (bulk RNA-seq) | GSE225846 | https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE225846 |
-| Breast cancer early-stage (bulk RNA-seq) | GSE229571 | https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE229571 |
+| Cohort | Link |
+| :--- | :--- |
+| GSE225846 | https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE225846 |
+| GSE229571 | https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE229571 |
 
 ---
 
