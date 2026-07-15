@@ -20,7 +20,7 @@ BRCA-eRNA-Early-Detection/
 ├── Data_Source/                        <-- Required input files (See Data Preparation)
 ├── Scripts/                            
 │   ├── 0_High_Performance_Quant_Pipeline.sh   <-- HISAT2 & featureCounts pipeline
-│   ├── 1.1_nested_cv_pipeline.py              <-- Nested CV pipeline: ANOVA + LASSO + 10 classifiers
+│   ├── core_nested_cv_pipeline.py              <-- Nested CV pipeline: ANOVA + LASSO + 10 classifiers
 │   ├── generate_clean_data.py                 <-- Data cleaning & target matching across cohorts
 │   ├── batch_effect_evaluation.py             <-- Batch effect PCA evaluation (Fig S11)
 │   ├── batch_effect_replacement.py            <-- Batch effect replacement analysis
@@ -104,7 +104,7 @@ and set the --index path accordingly in the script.
 *   **Output:** Generates `counts_matrix_500bp_clean.txt` for each GSE dataset.
 
 ### Part II: Nested Cross-Validation Pipeline
-**Script 1: `1.1_nested_cv_pipeline.py`**
+**Script 1: `core_nested_cv_pipeline.py`**
 *   **Function:** Implements a 10-fold nested cross-validation framework. Performs ANOVA feature selection, Bootstrap LASSO regression to derive a 19-eRNA diagnostic signature, and evaluates 10 ML/DL classifiers (XGBoost, AdaBoost, ExtraTrees, RF, KNN, LDA, LR, NaiveBayes, MLP, CNN). Outputs nested CV AUC distributions, final signature list, and external validation metrics.
 
 **Script 2: `generate_clean_data.py`**
