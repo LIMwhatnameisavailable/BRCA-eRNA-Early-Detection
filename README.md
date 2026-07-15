@@ -27,7 +27,7 @@ BRCA-eRNA-Early-Detection/
 │   └── subtype_analysis/
 │       └── run_subtype_analysis.py            <-- PAM50 and clinical subtype AUC analysis
 ├── ExternalValidationData/            <-- Processed counts matrices for external validation
-│   ├── eRNA_standard_500bp_hg38.saf
+│   ├── eRNA_standard_500bp_hg38.saf   <-- hg38 (liftOver from original hg19)
 │   ├── GSE225846/counts_matrix_500bp_clean.txt.gz
 │   └── GSE229571/counts_matrix_500bp_clean.txt.gz
 ├── Results/                           <-- All results, figures, tables, and trained models
@@ -86,6 +86,21 @@ Pre-computed expression matrices for GSE225846 and GSE229571 are available in `E
 ⚠️ Note: A pre-built HISAT2 index for GRCh38 is required.
 Download from the HISAT2 index page
 and set the --index path accordingly in the script.
+
+---
+
+### 🌐 External Validation Datasets
+
+| Cohort | GEO Accession | Link |
+| :--- | :--- | :--- |
+| Breast cancer early-stage (bulk RNA-seq) | GSE225846 | https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE225846 |
+| Breast cancer early-stage (bulk RNA-seq) | GSE229571 | https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE229571 |
+
+---
+
+### ⚠️ Genome Build Note
+
+The eRNA annotation file `eRNA_standard_500bp_hg38.saf` in `ExternalValidationData/` has been converted from the original **hg19** coordinates to **hg38** via liftOver (2026-07-05). All analysis scripts in this repository expect hg38 coordinates. If you are working with legacy hg19-aligned data, please ensure coordinate compatibility.
 
 ### 📁 Result Directories
 
