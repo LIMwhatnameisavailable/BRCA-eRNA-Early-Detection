@@ -8,7 +8,7 @@ As a parallel extension to our Prognostic Signature Project ([BRCA-eRNA-Prognosi
 ## 🌐 Interactive Web Application 
 To make our models accessible to clinicians and researchers without programming expertise, we have deployed a user-friendly online tool: eRNACare. You can upload your own eRNA expression profiles to get real-time diagnostic predictions without running any code.
 
-### **Access the Web App here:** ([ernacare](https://limseu.shinyapps.io/ernacare/))
+### **Access the Web App here:** [ernacare](https://limseu.shinyapps.io/ernacare/)
 
 ## 📂 Repository Structure
 The repository is designed as a standalone project, organized chronologically from raw data quantification to model bootstrap evaluation.
@@ -93,8 +93,8 @@ and set the --index path accordingly in the script.
 
 | Cohort | Link |
 | :--- | :--- |
-| GSE225846 | https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE225846 |
-| GSE229571 | https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE229571 |
+| GSE225846 | [link to GSE225846](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE225846) |
+| GSE229571 | [link to GSE229571](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE229571) |
 
 ---
 
