@@ -1,0 +1,6 @@
+Subtype,N_tumor,N_normal,AUC,95CI_lower,95CI_upper
+Luminal A,434,113,0.9956,0.9888,0.9993
+Luminal B,194,113,0.9998,0.9991,1.0
+HER2-enriched,67,113,0.9995,0.998,1.0
+Basal-like,141,113,0.9988,0.9956,1.0
+Normal-like,119,113,0.9944,0.9857,0.9999

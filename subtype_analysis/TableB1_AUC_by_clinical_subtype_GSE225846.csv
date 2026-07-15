@@ -1,0 +1,5 @@
+Clinical_Subtype,N_tumor,N_normal,AUC,95CI_lower,95CI_upper
+HR+/HER2− (Luminal-like),46,75,0.9293,0.8765,0.9692
+HER2+,14,75,0.9183,0.8284,0.983
+TNBC (Triple Negative),15,75,0.9837,0.9583,0.9992
+Other/Unclassified,5,75,0.9283,0.7771,1.0

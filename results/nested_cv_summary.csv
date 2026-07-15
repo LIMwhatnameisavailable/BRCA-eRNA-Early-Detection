@@ -1,0 +1,11 @@
+Model,Mean_AUC,SD,Min_AUC,Max_AUC,Fold_AUCs
+LR,0.9912,0.0064,0.975,0.9977,"[np.float64(0.9943), np.float64(0.992), np.float64(0.9943), np.float64(0.975), np.float64(0.9886), np.float64(0.9955), np.float64(0.9909), np.float64(0.9864), np.float64(0.9977), np.float64(0.9975)]"
+LDA,0.9942,0.0093,0.967,1.0,"[np.float64(0.9989), np.float64(0.9966), np.float64(0.9977), np.float64(0.967), np.float64(0.9909), np.float64(0.9977), np.float64(0.9977), np.float64(0.9977), np.float64(0.9977), np.float64(1.0)]"
+NaiveBayes,0.9947,0.0043,0.9875,1.0,"[np.float64(0.9989), np.float64(0.9943), np.float64(1.0), np.float64(0.9886), np.float64(0.992), np.float64(0.9989), np.float64(0.9955), np.float64(0.9875), np.float64(0.9989), np.float64(0.9926)]"
+KNN,0.9872,0.0083,0.9727,0.9977,"[np.float64(0.9886), np.float64(0.9909), np.float64(0.992), np.float64(0.9739), np.float64(0.9795), np.float64(0.9932), np.float64(0.9898), np.float64(0.9727), np.float64(0.9977), np.float64(0.9938)]"
+RF,0.9939,0.0043,0.9864,1.0,"[np.float64(1.0), np.float64(0.9932), np.float64(0.9989), np.float64(0.9864), np.float64(0.9909), np.float64(0.9977), np.float64(0.9955), np.float64(0.9886), np.float64(0.9966), np.float64(0.9914)]"
+ExtraTrees,0.9951,0.0044,0.9864,1.0,"[np.float64(1.0), np.float64(0.9955), np.float64(1.0), np.float64(0.9864), np.float64(0.992), np.float64(1.0), np.float64(0.9943), np.float64(0.9909), np.float64(0.9989), np.float64(0.9926)]"
+AdaBoost,0.9929,0.0073,0.9739,1.0,"[np.float64(0.9966), np.float64(0.9966), np.float64(1.0), np.float64(0.9739), np.float64(0.9955), np.float64(0.9977), np.float64(0.9898), np.float64(0.9898), np.float64(0.9909), np.float64(0.9988)]"
+XGB,0.9925,0.0052,0.9818,1.0,"[np.float64(0.9977), np.float64(0.9932), np.float64(1.0), np.float64(0.9818), np.float64(0.9898), np.float64(0.9943), np.float64(0.9955), np.float64(0.9852), np.float64(0.9932), np.float64(0.9938)]"
+MLP,0.9988,0.003,0.9898,1.0,"[np.float64(1.0), np.float64(1.0), np.float64(1.0), np.float64(0.9898), np.float64(1.0), np.float64(1.0), np.float64(0.9989), np.float64(0.9989), np.float64(1.0), np.float64(1.0)]"
+CNN,0.9866,0.0087,0.967,0.9989,"[np.float64(0.9909), np.float64(0.9898), np.float64(0.9989), np.float64(0.967), np.float64(0.9875), np.float64(0.9898), np.float64(0.975), np.float64(0.9852), np.float64(0.9909), np.float64(0.9914)]"
