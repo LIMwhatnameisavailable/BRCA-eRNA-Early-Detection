@@ -99,7 +99,7 @@ and set the --index path accordingly in the script.
 ## 🚀 How to Run the Pipeline
 
 ### Part I: High-Performance Data Quantification
-**Script 0: `0_High_Performance_Quant_Pipeline.sh`**
+**Script 0: `0_Quant_Pipeline.sh`**
 *   **Function:** A Bash script utilizing FIFO named pipes for concurrency control. It aligns raw FASTQ files using `HISAT2`, pipes directly to `samtools sort` to save I/O, and performs multi-threaded quantification using `featureCounts` against the custom 500bp SAF file.
 *   **Output:** Generates `counts_matrix_500bp_clean.txt` for each GSE dataset.
 
