@@ -135,9 +135,9 @@ The annotation file `eRNA_standard_500bp_hg38.saf` in `ExternalValidationData/` 
 *   **Python Environment:** Python 3.9+, `scikit-learn` (1.6.1), `PyTorch` (2.3.1), `joblib`, `numpy`, `pandas`, `matplotlib`.
 *   **Bioinformatics Tools:** `HISAT2`, `samtools`, `featureCounts` (Subread package).
 
-  ## 📜 License
-
-This project is for research and educational purposes. The TCGA and GEO data are subject to their respective original license terms.
+## 📜 License
+This project is licensed under the [MIT License](LICENSE).
+The TCGA and GEO data are subject to their respective original license terms.
 
 ---
 
