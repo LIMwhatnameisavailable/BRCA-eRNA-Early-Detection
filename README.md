@@ -100,7 +100,7 @@ and set the --index path accordingly in the script.
 
 ### ⚠️ Genome Build Note
 
-The eRNA annotation file `eRNA_standard_500bp_hg38.saf` in `ExternalValidationData/` has been converted from the original **hg19** coordinates to **hg38** via liftOver (2026-07-05). All analysis scripts in this repository expect hg38 coordinates. If you are working with legacy hg19-aligned data, please ensure coordinate compatibility.
+The annotation file `eRNA_standard_500bp_hg38.saf` in `ExternalValidationData/` has been converted from the original **hg19** coordinates to **hg38** via liftOver. All analysis scripts in this repository expect hg38 coordinates.
 
 ### 📁 Result Directories
 
