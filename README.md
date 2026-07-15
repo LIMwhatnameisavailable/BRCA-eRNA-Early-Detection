@@ -1,4 +1,4 @@
-<img width="3056" height="1656" alt="56a8a176-7b88-4e82-91c2-0d93ed3d8680" src="https://github.com/user-attachments/assets/9cc6b9d4-cf6e-4567-af61-7e16693f2ff1" /># TCGA-BRCA eRNA Early-Stage Detection Project
+# TCGA-BRCA eRNA Early-Stage Detection Project
 
 ## 📌 Project Overview
 This repository contains the complete Python-based machine learning and deep learning pipeline for the early-stage discrimination of Breast Cancer (BRCA) using enhancer RNA (eRNA) profiles. 
