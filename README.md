@@ -19,7 +19,7 @@ BRCA-eRNA-Early-Detection/
 ├── README.md                           <-- Project documentation
 ├── Data_Source/                        <-- Required input files (See Data Preparation)
 ├── Scripts/                            
-│   ├── 0_High_Performance_Quant_Pipeline.sh   <-- HISAT2 & featureCounts pipeline
+│   ├── 0_Quant_Pipeline.sh   <-- HISAT2 & featureCounts pipeline
 │   ├── core_nested_cv_pipeline.py              <-- Nested CV pipeline: ANOVA + LASSO + 10 classifiers
 │   ├── generate_clean_data.py                 <-- Data cleaning & target matching across cohorts
 │   ├── batch_effect_evaluation.py             <-- Batch effect PCA evaluation (Fig S11)
