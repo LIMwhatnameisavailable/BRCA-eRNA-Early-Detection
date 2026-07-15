@@ -20,7 +20,7 @@ BRCA-eRNA-Early-Detection/
 ├── Data_Source/                        <-- Required input files (See Data Preparation)
 ├── Scripts/                            
 │   ├── 0_Quant_Pipeline.sh   <-- HISAT2 & featureCounts pipeline
-│   ├── core_nested_cv_pipeline.py              <-- Nested CV pipeline: ANOVA + LASSO + 10 classifiers
+│   ├── core_nested_cv_pipeline.py             <-- Nested CV pipeline: ANOVA + LASSO + 10 classifiers
 │   ├── generate_clean_data.py                 <-- Data cleaning & target matching across cohorts
 │   ├── batch_effect_evaluation.py             <-- Batch effect PCA evaluation (Fig S11)
 │   ├── batch_effect_replacement.py            <-- Batch effect replacement analysis
@@ -32,7 +32,7 @@ BRCA-eRNA-Early-Detection/
 │   └── GSE229571/counts_matrix_500bp_clean.txt.gz
 ├── Results/                           <-- All results, figures, tables, and trained models
 │   ├── Analysis_Results/              <-- Nested CV results, signature lists, metrics
-│   ├── Figures/         <-- ROC curves, PCA batch effect plots (Fig S11)
+│   ├── Figures/                       <-- ROC curves, PCA batch effect plots (Fig S11)
 │   ├── Supplementary_Tables/          <-- Supplementary Tables S13-S26
 │   └── Trained_Models/                <-- 11 trained ML/DL models (.pkl)
 └── environment/                       <-- Conda environment configuration
