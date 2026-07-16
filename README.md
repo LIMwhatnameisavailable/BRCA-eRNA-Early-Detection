@@ -1,4 +1,10 @@
 # TCGA-BRCA eRNA Early-Stage Detection Project
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21381664.svg)](https://doi.org/10.5281/zenodo.21381664)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS%20%7C%20Windows-lightgrey)]()
+[![Journal](https://img.shields.io/badge/Journal-NAR%20Cancer-red)]()
+[![eRNACare](https://img.shields.io/badge/WebApp-eRNACare-brightgreen)](https://limseu.shinyapps.io/ernacare/)
 
 ## 📌 Project Overview
 This repository contains the complete Python-based machine learning and deep learning pipeline for the early-stage discrimination of Breast Cancer (BRCA) using enhancer RNA (eRNA) profiles. 
