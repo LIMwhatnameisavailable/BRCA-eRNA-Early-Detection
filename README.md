@@ -113,7 +113,7 @@ The annotation file `eRNA_standard_500bp_hg38.saf` in `ExternalValidationData/` 
 | Directory | Description |
 | :--- | :--- |
 | `Results/Analysis_Results/` | Nested CV summary CSVs, final signature lists, and external validation SCI metrics |
-| `Results/Figures/` | ROC curves (GSE225846, GSE229571, KNN51), nested CV AUC distribution, and batch effect PCA plots (Fig S11) |
+| `Results/Figures/` | ROC curves (GSE225846, GSE229571), nested CV AUC distribution, and batch effect PCA plots (Fig S11) |
 | `Results/Supplementary_Tables/` | Supplementary Tables S13–S26 (early detection signature, top300 features, nested CV summary, PAM50/subtype AUC) |
 | `Results/Trained_Models/` | 11 trained ML/DL model `.pkl` files (ready for deployment) |
 
